@@ -1,0 +1,207 @@
+﻿# ============================================
+# .gitignore for Cancer Prediction Project
+# ============================================
+
+# ============================================
+# DATA FILES (DO NOT COMMIT LARGE DATA)
+# ============================================
+
+# Ignore all data files
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# But keep empty data folder structure
+!data/.gitkeep
+
+# ============================================
+# PYTHON FILES TO IGNORE
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+*.so
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+
+# ============================================
+# MODELS AND CHECKPOINTS
+# ============================================
+
+# Ignore trained models (they're large)
+models/
+*.pkl
+*.joblib
+*.model
+*.json
+*.h5
+*.pb
+*.pt
+*.pth
+
+# But keep empty models folder
+!models/.gitkeep
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+# IDE AND EDITOR FILES
+# ============================================
+
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyproject/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OS GENERATED FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.BIN/
+
+# Linux
+.directory
+*.swp
+*.swo
+*~
+
+# ============================================
+# LOGS AND REPORTS
+# ============================================
+
+# Logs
+*.log
+logs/
+
+# Reports (keep structure, ignore content)
+reports/*.html
+reports/*.pdf
+reports/figures/*
+
+# ============================================
+# CONFIGURATION FILES WITH SENSITIVE DATA
+# ============================================
+
+# Ignore local config files
+config/local.yaml
+config/secret.yaml
+.env
+*.env
+
+# ============================================
+# TEST COVERAGE
+# ============================================
+
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+.coverage
+
+# ============================================
+# FILES TO KEEP (explicitly track these)
+# ============================================
+
+# IMPORTANT: These files WILL be tracked by Git
+
+# __init__.py files (make Python packages)
+!src/__init__.py
+!src/data/__init__.py
+!src/features/__init__.py
+!src/models/__init__.py
+!src/visualization/__init__.py
+
+# Configuration templates
+!config/config.yaml
+!config/config_template.yaml
+
+# README and documentation
+!README.md
+!*.md
+
+# Main scripts
+!*.py
+!run_all.bat
+
+# Keep folder structure
+!data/.gitkeep
+!models/.gitkeep
+!notebooks/.gitkeep
+
+# Requirements file
+!requirements.txt
+
+# ============================================
+# NOTES
+# ============================================
+# 
+# This .gitignore is configured for cancer prediction project
+# 
+# To track a specific file that would normally be ignored:
+#   git add -f filename
+#
+# To check what files will be ignored:
+#   git status --ignored
+#
+# ============================================
